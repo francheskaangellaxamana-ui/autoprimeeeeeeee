@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTOPRIME | My Account</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="enhance.css">
+</head>
+<body data-page="account">
+<header>
+    <div class="logo">AUTO<span>PRIME</span></div>
+    <div class="header-search">
+        <input type="search" class="site-search" placeholder="Search e.g. Toyota, Civic, SUV..." aria-label="Search vehicles">
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <a href="browse.html">Browse Vehicles ▾</a>
+            <div class="dropdown-menu">
+                <a href="browse.html">All Vehicles</a>
+                <a href="sedan.html">Sedan</a>
+                <a href="suv.html">SUV</a>
+                <a href="pickup.html">Pickup</a>
+            </div>
+        </div>
+        <a href="compare.html">Compare <span class="nav-count" data-count="compare"></span></a>
+        <a href="favorites.html">Favorites <span class="nav-count" data-count="fav"></span></a>
+        <a href="help.html">Help Center</a>
+        <a href="sell.html">Sell Vehicle</a>
+        <a href="account.html" class="my-account-link active">My Account</a>
+    </nav>
+</header>
+<section class="receipt-banner ap-banner">
+    <div>
+        <p class="small-title">YOUR AUTOPRIME ACCOUNT</p>
+        <h1>My Account</h1>
+        <p>Manage your purchases, saved searches, favorites, messages, and identity verification.</p>
+    </div>
+</section>
+<main class="ap-main">
+<section id="accountGate" class="transactions-login-gate" hidden>
+  <div class="lock-icon">🔒</div><h2>Sign in to view your account</h2>
+  <p>Your dashboard, messages, and verification status are private to your AUTOPRIME account.</p>
+  <button type="button" class="primary-button" id="accountLoginBtn">Log In / Create Account</button>
+</section>
+<div id="accountApp" class="ap-dash" hidden>
+  <nav class="ap-dash-nav" id="dashNav" aria-label="Dashboard sections"></nav>
+  <div class="ap-dash-body" id="dashBody"></div>
+</div>
+</main>
+<footer class="site-footer">
+    <div class="footer-grid">
+        <div><div class="logo">AUTO<span>PRIME</span></div><p>An academic prototype of an online vehicle marketplace. All listings, sellers, and transactions are sample data.</p></div>
+        <div><h4>Browse</h4><a href="browse.html">All Vehicles</a><a href="compare.html">Compare Vehicles</a><a href="favorites.html">Favorites</a><a href="sell.html">Sell a Vehicle</a></div>
+        <div><h4>Support</h4><a href="help.html">Help Center</a><a href="help.html#faq">FAQ</a><a href="help.html#ticket">Submit a Ticket</a><a href="#" data-open-support>Live Chat</a></div>
+        <div><h4>Account</h4><a href="account.html">My Account</a><a href="account.html#saved">Saved Searches</a><a href="account.html#verification">ID Verification</a><a href="transactions.html">Transactions</a></div>
+    </div>
+    <p class="footer-copy">© 2026 AUTOPRIME. All Rights Reserved. · Simulated features are clearly labeled.</p>
+</footer>
+<script src="app.js"></script>
+<script src="catalog-data.js"></script>
+<script src="enhance.js"></script>
+</body>
+</html>

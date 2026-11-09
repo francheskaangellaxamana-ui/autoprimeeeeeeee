@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTOPRIME | Browse Vehicles</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="enhance.css">
+</head>
+<body data-page="browse">
+<header>
+    <div class="logo">AUTO<span>PRIME</span></div>
+    <div class="header-search">
+        <input type="search" class="site-search" placeholder="Search e.g. Toyota, Civic, SUV..." aria-label="Search vehicles">
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <a href="browse.html" class="active">Browse Vehicles ▾</a>
+            <div class="dropdown-menu">
+                <a href="browse.html" class="active">All Vehicles</a>
+                <a href="sedan.html">Sedan</a>
+                <a href="suv.html">SUV</a>
+                <a href="pickup.html">Pickup</a>
+            </div>
+        </div>
+        <a href="compare.html">Compare <span class="nav-count" data-count="compare"></span></a>
+        <a href="favorites.html">Favorites <span class="nav-count" data-count="fav"></span></a>
+        <a href="help.html">Help Center</a>
+        <a href="sell.html">Sell Vehicle</a>
+        <a href="account.html" class="my-account-link">My Account</a>
+    </nav>
+</header>
+<section class="receipt-banner ap-banner">
+    <div>
+        <p class="small-title">AUTOPRIME MARKETPLACE</p>
+        <h1>Browse Vehicles</h1>
+        <p>Filter every sedan, SUV, and pickup on AUTOPRIME, then save your search for one-click recall.</p>
+    </div>
+</section>
+<main class="ap-main">
+<div class="ap-browse">
+  <aside class="ap-filters" aria-label="Search filters">
+    <h2>Filters</h2>
+    <form id="browseFilters">
+      <div class="ap-filter-group"><span class="ap-filter-label">Price Range</span><div class="ap-row"><label>Min price (₱)<input name="minPrice" type="number" min="0" step="10000" placeholder="₱0"></label><label>Max price (₱)<input name="maxPrice" type="number" min="0" step="10000" placeholder="₱5,000,000+"></label></div></div>
+      <label>Brand<select name="brand"><option value="">All brands</option></select></label>
+      <label>Model<input name="model" type="text" placeholder="e.g. Fortuner"></label>
+      <label>Year from<input name="minYear" type="number" min="1990" max="2030"></label>
+      <label>Keyword<input name="q" type="search" placeholder="e.g. Civic, diesel"></label>
+      <label>Category<select name="category"><option value="">All categories</option><option value="sedan">Sedan</option><option value="suv">SUV</option><option value="pickup">Pickup</option></select></label>
+      <label>Max mileage (km)<input name="maxMileage" type="number" min="0" step="1000"></label>
+      <label>Transmission<select name="transmission"><option value="">Any</option><option>Automatic</option><option>Manual</option></select></label>
+      <label>Fuel type<select name="fuel"><option value="">Any</option><option>Gasoline</option><option>Diesel</option><option>Hybrid</option><option>Electric</option></select></label>
+      <div class="ap-filter-actions"><button type="button" class="primary-button" id="saveSearchBtn">Save Search</button><button type="reset" class="ap-btn-ghost">Clear Filters</button></div>
+      <p class="ap-msg" id="browseMsg" aria-live="polite"></p>
+    </form>
+  </aside>
+  <section>
+    <div class="ap-results-head"><span id="resultCount" class="ap-visually-hidden" aria-live="polite">Loading vehicles…</span><label class="ap-sort">Sort by:<select id="sortBy"><option value="newest">Newest First</option><option value="price-asc">Price: Low to High</option><option value="price-desc">Price: High to Low</option></select></label><a href="account.html#saved" class="ap-link">My Saved Searches →</a></div>
+    <div class="vehicle-grid" id="browseGrid"></div>
+  </section>
+</div>
+</main>
+<footer class="site-footer">
+    <div class="footer-grid">
+        <div><div class="logo">AUTO<span>PRIME</span></div><p>An academic prototype of an online vehicle marketplace. All listings, sellers, and transactions are sample data.</p></div>
+        <div><h4>Browse</h4><a href="browse.html">All Vehicles</a><a href="compare.html">Compare Vehicles</a><a href="favorites.html">Favorites</a><a href="sell.html">Sell a Vehicle</a></div>
+        <div><h4>Support</h4><a href="help.html">Help Center</a><a href="help.html#faq">FAQ</a><a href="help.html#ticket">Submit a Ticket</a><a href="#" data-open-support>Live Chat</a></div>
+        <div><h4>Account</h4><a href="account.html">My Account</a><a href="account.html#saved">Saved Searches</a><a href="account.html#verification">ID Verification</a><a href="transactions.html">Transactions</a></div>
+    </div>
+    <p class="footer-copy">© 2026 AUTOPRIME. All Rights Reserved. · Simulated features are clearly labeled.</p>
+</footer>
+<script src="app.js"></script>
+<script src="catalog-data.js"></script>
+<script src="enhance.js"></script>
+</body>
+</html>

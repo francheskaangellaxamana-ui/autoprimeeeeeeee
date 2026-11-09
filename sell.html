@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AUTOPRIME | Sell Your Vehicle</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="enhance.css">
+
+</head>
+
+<body>
+
+
+<header>
+
+    <div class="logo">
+        AUTO<span>PRIME</span>
+    </div>
+
+    <div class="header-search">
+        <input type="search" class="site-search" placeholder="Search e.g. Toyota, Civic, SUV..." aria-label="Search vehicles">
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <a href="browse.html">Browse Vehicles ▾</a>
+            <div class="dropdown-menu">
+                <a href="browse.html">All Vehicles</a>
+                <a href="sedan.html">Sedan</a>
+                <a href="suv.html">SUV</a>
+                <a href="pickup.html">Pickup</a>
+            </div>
+        </div>
+        <a href="compare.html">Compare <span class="nav-count" data-count="compare"></span></a>
+        <a href="favorites.html">Favorites <span class="nav-count" data-count="fav"></span></a>
+        <a href="help.html">Help Center</a>
+        <a href="sell.html" class="active">Sell Vehicle</a>
+        <a href="account.html" class="my-account-link">My Account</a>
+    </nav>
+
+</header>
+
+
+<section class="sell-banner">
+
+    <div>
+
+        <p class="small-title">
+            SELL WITH AUTOPRIME
+        </p>
+
+        <h1>
+            Sell Your Vehicle
+        </h1>
+
+        <p>
+            Create a detailed vehicle listing and
+            connect with potential buyers.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="sell-form-section">
+
+    <div class="section-heading">
+
+        <p class="small-title">
+            CREATE YOUR LISTING
+        </p>
+
+        <h2>
+            Vehicle Information
+        </h2>
+
+        <p>
+            Enter complete and accurate information
+            about your vehicle.
+        </p>
+
+    </div>
+
+
+    <form id="sellForm">
+
+
+        <div class="form-section">
+
+            <h3>
+                1. Vehicle Category
+            </h3>
+
+            <div class="form-grid">
+
+                <div class="form-group">
+
+                    <label>
+                        Vehicle Type *
+                    </label>
+
+                    <select id="sellCategory" required>
+
+                        <option value="">
+                            Select Category
+                        </option>
+
+                        <option>
+                            Sedan
+                        </option>
+
+                        <option>
+                            SUV
+                        </option>
+
+                        <option>
+                            Pickup
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Condition *
+                    </label>
+
+                    <select id="sellCondition" required>
+
+                        <option>
+                            Brand New
+                        </option>
+
+                        <option>
+                            Used - Excellent
+                        </option>
+
+                        <option>
+                            Used - Good
+                        </option>
+
+                        <option>
+                            Used - Fair
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="form-section">
+
+            <h3>
+                2. Vehicle Details
+            </h3>
+
+            <div class="form-grid">
+
+                <div class="form-group">
+
+                    <label>
+                        Brand *
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="Toyota"
+                        id="sellBrand"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Model *
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="Example: Vios 1.3 XLE"
+                        id="sellModel"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Year *
+                    </label>
+
+                    <input
+                        type="number"
+                        placeholder="2022"
+                        id="sellYear"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Mileage *
+                    </label>
+
+                    <input
+                        type="number"
+                        placeholder="45000"
+                        id="sellMileage"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Engine
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="Example: 1.5L"
+                        id="sellEngine">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Transmission
+                    </label>
+
+                    <select id="sellTransmission">
+
+                        <option>
+                            Automatic
+                        </option>
+
+                        <option>
+                            Manual
+                        </option>
+
+                        <option>
+                            CVT
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Fuel Type
+                    </label>
+
+                    <select>
+
+                        <option>
+                            Gasoline
+                        </option>
+
+                        <option>
+                            Diesel
+                        </option>
+
+                        <option>
+                            Hybrid
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Color
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="White"
+                        id="sellColor">
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="form-section">
+
+            <h3>
+                3. Pricing
+            </h3>
+
+            <div class="form-grid">
+
+                <div class="form-group">
+
+                    <label>
+                        Asking Price *
+                    </label>
+
+                    <input
+                        type="number"
+                        placeholder="Enter price"
+                        id="sellPrice"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Is the price negotiable?
+                    </label>
+
+                    <select>
+
+                        <option>
+                            Yes
+                        </option>
+
+                        <option>
+                            No
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="form-section">
+
+            <h3>
+                4. Vehicle Description
+            </h3>
+
+            <div class="form-group">
+
+                <label>
+                    Description *
+                </label>
+
+                <textarea id="sellDescription"
+                    rows="7"
+                    placeholder="Describe the condition, features, maintenance history, and other important details."
+                    required></textarea>
+
+            </div>
+
+        </div>
+
+
+        <div class="form-section">
+
+            <h3>
+                5. Location
+            </h3>
+
+            <div class="form-grid">
+
+                <div class="form-group">
+
+                    <label>
+                        Province
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="Pampanga">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        City / Municipality
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="Angeles City">
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="form-section">
+
+            <h3>
+                6. Seller Information
+            </h3>
+
+            <div class="form-grid">
+
+                <div class="form-group">
+
+                    <label>
+                        Full Name *
+                    </label>
+
+                    <input
+                        type="text"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Phone Number *
+                    </label>
+
+                    <input
+                        type="tel"
+                        placeholder="09XX XXX XXXX"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        placeholder="example@email.com">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Preferred Contact
+                    </label>
+
+                    <select>
+
+                        <option>
+                            Phone Call
+                        </option>
+
+                        <option>
+                            Text Message
+                        </option>
+
+                        <option>
+                            Email
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="form-section">
+
+            <h3>
+                7. Vehicle Photos
+            </h3>
+
+            <p>
+                Upload clear images of the exterior
+                and interior of your vehicle.
+            </p>
+
+            <div class="photo-upload">
+
+                <div class="upload-icon">
+                    📷
+                </div>
+
+                <h3>
+                    Upload Photos
+                </h3>
+
+                <p>
+                    Select multiple vehicle photos.
+                </p>
+
+                <input
+                    type="file"
+                    accept="image/*"
+                    id="sellPhotos"
+                    multiple>
+
+            </div>
+
+        </div>
+
+
+        <div class="agreement">
+
+            <label>
+
+                <input
+                    type="checkbox"
+                    required>
+
+                I confirm that the information
+                provided is accurate.
+
+            </label>
+
+        </div>
+
+
+        <div class="submit-area">
+
+            <button
+                type="reset"
+                class="cancel-button">
+
+                Clear Form
+
+            </button>
+
+
+            <button
+                type="submit"
+                class="submit-button">
+
+                Submit Listing
+
+            </button>
+
+        </div>
+
+    </form>
+
+</section>
+
+
+<!-- SELLING PROCESS -->
+
+<section class="selling-process">
+
+    <div class="section-heading light">
+
+        <p class="small-title">
+            HOW IT WORKS
+        </p>
+
+        <h2>
+            Sell Your Vehicle in 4 Steps
+        </h2>
+
+    </div>
+
+
+    <div class="steps">
+
+        <div class="step">
+
+            <b>01</b>
+
+            <h3>
+                Enter Details
+            </h3>
+
+            <p>
+                Provide your vehicle's specifications,
+                condition, and price.
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <b>02</b>
+
+            <h3>
+                Add Photos
+            </h3>
+
+            <p>
+                Upload clear photos to help buyers
+                understand your vehicle.
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <b>03</b>
+
+            <h3>
+                Submit Listing
+            </h3>
+
+            <p>
+                Review your information and submit
+                your vehicle listing.
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <b>04</b>
+
+            <h3>
+                Connect With Buyers
+            </h3>
+
+            <p>
+                Interested buyers can contact you
+                about your vehicle.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="my-listings-section">
+    <div class="my-listings-header">
+        <p class="small-title">SELLER DASHBOARD</p>
+        <h2>My Active Selling List</h2>
+        <p>See every vehicle you currently have for sale. You can edit it, mark it as sold, or remove the listing.</p>
+    </div>
+    <div id="myListings" class="seller-listings-grid"></div>
+</section>
+
+
+<section class="my-listings-section purchase-requests-section" id="purchaseRequests">
+    <div class="my-listings-header">
+        <p class="small-title">BUYER ACTIVITY</p>
+        <h2>Purchase Requests</h2>
+        <p>Accept a buyer's request to complete the sale and automatically generate a transaction receipt for both accounts.</p>
+    </div>
+    <div id="sellerPurchaseRequests" class="seller-listings-grid"></div>
+</section>
+
+<section class="my-listings-section sold-vehicles-section">
+    <div class="my-listings-header">
+        <p class="small-title">SALES HISTORY</p>
+        <h2>Cars You Sold</h2>
+        <p>Cars you sell appear here with a SOLD status. Completed AUTOPRIME transactions also show buyer and receipt details.</p>
+    </div>
+    <div id="sellerSoldVehicles" class="owned-vehicle-grid"></div>
+</section>
+
+<footer class="site-footer">
+    <div class="footer-grid">
+        <div><div class="logo">AUTO<span>PRIME</span></div><p>An academic prototype of an online vehicle marketplace. All listings, sellers, and transactions are sample data.</p></div>
+        <div><h4>Browse</h4><a href="browse.html">All Vehicles</a><a href="compare.html">Compare Vehicles</a><a href="favorites.html">Favorites</a><a href="sell.html">Sell a Vehicle</a></div>
+        <div><h4>Support</h4><a href="help.html">Help Center</a><a href="help.html#faq">FAQ</a><a href="help.html#ticket">Submit a Ticket</a><a href="#" data-open-support>Live Chat</a></div>
+        <div><h4>Account</h4><a href="account.html">My Account</a><a href="account.html#saved">Saved Searches</a><a href="account.html#verification">ID Verification</a><a href="transactions.html">Transactions</a></div>
+    </div>
+    <p class="footer-copy">© 2026 AUTOPRIME. All Rights Reserved. · Simulated features are clearly labeled.</p>
+</footer>
+
+
+<script src="app.js"></script>
+<script src="catalog-data.js"></script>
+<script src="enhance.js"></script>
+
+
+
+</body>
+</html>

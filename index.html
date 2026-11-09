@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTOPRIME | Buy & Sell Vehicles</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="enhance.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">AUTO<span>PRIME</span></div>
+
+    <div class="header-search">
+        <input type="search" class="site-search" placeholder="Search e.g. Toyota, Civic, SUV..." aria-label="Search vehicles">
+    </div>
+
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <div class="dropdown">
+            <a href="browse.html">Browse Vehicles ▾</a>
+            <div class="dropdown-menu">
+                <a href="browse.html">All Vehicles</a>
+                <a href="sedan.html">Sedan</a>
+                <a href="suv.html">SUV</a>
+                <a href="pickup.html">Pickup</a>
+            </div>
+        </div>
+        <a href="compare.html">Compare <span class="nav-count" data-count="compare"></span></a>
+        <a href="favorites.html">Favorites <span class="nav-count" data-count="fav"></span></a>
+        <a href="help.html">Help Center</a>
+        <a href="sell.html">Sell Vehicle</a>
+        <a href="account.html" class="my-account-link">My Account</a>
+    </nav>
+</header>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <p class="small-title">THE SMARTER WAY TO BUY & SELL</p>
+
+        <h1>
+            Find Your Next<br>
+            <span>Perfect Vehicle.</span>
+        </h1>
+
+        <p>
+            AUTOPRIME is a modern online marketplace where
+            buyers can discover quality sedans, SUVs, and
+            pickup trucks from different sellers.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="browse.html" class="primary-button">
+                Browse Vehicles
+            </a>
+
+            <a href="sell.html" class="secondary-button">
+                Sell Your Vehicle
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="home-intro section">
+    <div class="home-intro-copy">
+        <p class="small-title">YOUR NEXT VEHICLE STARTS HERE</p>
+        <h2>A simpler way to find the right car.</h2>
+        <p>Compare vehicle categories, review important details, and connect with sellers in one organized marketplace. Whether you need a practical sedan, a family SUV, or a hardworking pickup, AUTOPRIME helps you explore your options.</p>
+        <div class="home-intro-points">
+            <span>✓ Browse organized listings</span>
+            <span>✓ Review prices and specifications</span>
+            <span>✓ Searches saved automatically</span>
+        </div>
+    </div>
+    <div class="home-intro-panel">
+        <div><strong>03</strong><span>Vehicle categories</span></div>
+        <div><strong>24/7</strong><span>Browse anytime</span></div>
+        <div><strong>1 place</strong><span>For buyers and sellers</span></div>
+    </div>
+</section>
+
+<section class="saved-search-section section" id="savedSearchesSection">
+    <div class="section-heading">
+        <p class="small-title">QUICK RECALL</p>
+        <h2>Your Saved Searches</h2>
+        <p>Every vehicle you search for is saved automatically. Click the search bar to see them, or pick one up again here.</p>
+    </div>
+    <div id="savedSearchesList" class="saved-search-list">
+        <p class="saved-search-empty">Your searches are saved here automatically. Search for a vehicle above to get started.</p>
+    </div>
+</section>
+
+<section id="categories" class="section">
+
+    <div class="section-heading">
+
+        <p class="small-title">EXPLORE OUR MARKETPLACE</p>
+
+        <h2>Vehicle Categories</h2>
+
+        <p>
+            Choose a vehicle category to explore available
+            listings on AUTOPRIME.
+        </p>
+
+    </div>
+
+
+    <div class="category-grid">
+
+        <a href="sedan.html" class="category-card">
+
+            <div class="category-image sedan-bg">
+                <span>SEDAN</span>
+            </div>
+
+            <div class="category-info">
+
+                <h3>Sedans</h3>
+
+                <p>
+                    Comfortable and practical cars designed
+                    for everyday driving, commuting, and
+                    family use.
+                </p>
+
+                <strong>
+                    Explore Sedans →
+                </strong>
+
+            </div>
+
+        </a>
+
+
+        <a href="suv.html" class="category-card">
+
+            <div class="category-image suv-bg">
+                <span>SUV</span>
+            </div>
+            
+            <div class="category-info">
+
+                <h3>SUVs</h3>
+
+                <p>
+                    Spacious and versatile vehicles suitable
+                    for families, travel, and everyday
+                    adventures.
+                </p>
+
+                <strong>
+                    Explore SUVs →
+                </strong>
+
+            </div>
+
+        </a>
+
+
+        <a href="pickup.html" class="category-card">
+
+            <div class="category-image pickup-bg">
+                <span>PICKUP</span>
+            </div>
+
+            <div class="category-info">
+
+                <h3>Pickup Trucks</h3>
+
+                <p>
+                    Strong and capable vehicles designed for
+                    work, transportation, business, and
+                    outdoor activities.
+                </p>
+
+                <strong>
+                    Explore Pickups →
+                </strong>
+
+            </div>
+
+        </a>
+
+    </div>
+
+</section>
+
+<section class="featured">
+
+    <div class="section-heading">
+
+        <p class="small-title">FEATURED VEHICLES</p>
+
+        <h2>Popular Listings</h2>
+
+        <p>
+            Discover some of the vehicles available
+            through AUTOPRIME.
+        </p>
+
+    </div>
+
+
+    <div class="vehicle-grid">
+
+
+        <div class="vehicle-card" data-category="sedan">
+
+            <img src="image/Toyota-Vios-1.3-XLE-CVT-The-quintessential-first-car-1.jpg" alt="Toyota Vios Sedan">
+
+            <div class="vehicle-info">
+
+                <span class="vehicle-type">SEDAN</span>
+
+                <h3>Toyota Vios 1.3 XLE</h3>
+
+                <p>2022 • Automatic • 38,000 km</p>
+
+                <h4>₱735,000</h4>
+
+                <a href="sedan.html">
+                    View Details →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="vehicle-card" data-category="suv">
+
+            <img src="image/2022_Toyota_Fortuner_2.8_VRZ_GR_Sport_4x2_GUN166R_(20220428).jpg" alt="Toyota Fortuner SUV">
+
+            <div class="vehicle-info">
+
+                <span class="vehicle-type">SUV</span>
+
+                <h3>Toyota Fortuner 2.8</h3>
+
+                <p>2021 • Automatic • 42,000 km</p>
+
+                <h4>₱1,850,000</h4>
+
+                <a href="suv.html">
+                    View Details →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="vehicle-card" data-category="pickup">
+
+            <img src="image/hilux.jpg" alt="Toyota Hilux Pickup">
+
+            <div class="vehicle-info">
+
+                <span class="vehicle-type">PICKUP</span>
+
+                <h3>Toyota Hilux 2.4 G</h3>
+
+                <p>2022 • Manual • 31,000 km</p>
+
+                <h4>₱1,420,000</h4>
+
+                <a href="pickup.html">
+                    View Details →
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section home-recent" id="recentlyAddedSection">
+    <div class="section-heading">
+        <p class="small-title">JUST LISTED</p>
+        <h2>Recently Added Vehicles</h2>
+        <p>The newest vehicles posted by AUTOPRIME Dealer and member sellers.</p>
+    </div>
+    <div class="vehicle-grid" id="recentlyAddedGrid"><p class="ap-loading">Loading vehicles…</p></div>
+    <div class="ap-center"><a href="browse.html" class="primary-button">Browse All Vehicles</a></div>
+</section>
+
+<section class="section home-viewed" id="recentlyViewedSection">
+    <div class="section-heading">
+        <p class="small-title">PICK UP WHERE YOU LEFT OFF</p>
+        <h2>Recently Viewed Vehicles</h2>
+    </div>
+    <div class="ap-mini-grid" data-recently-viewed></div>
+</section>
+
+<section class="buyer-guide section">
+    <div class="section-heading">
+        <p class="small-title">A CLEARER BUYING JOURNEY</p>
+        <h2>Shop with confidence</h2>
+        <p>Use the information on each listing to make a more informed decision before contacting a seller.</p>
+    </div>
+    <div class="buyer-guide-grid">
+        <article><span>01</span><h3>Explore</h3><p>Browse sedans, SUVs, and pickup trucks based on your needs.</p></article>
+        <article><span>02</span><h3>Compare</h3><p>Check vehicle year, mileage, condition, specifications, and asking price.</p></article>
+        <article><span>03</span><h3>Connect</h3><p>Send a message to the seller and discuss the vehicle before arranging a transaction.</p></article>
+    </div>
+</section>
+
+<!-- WHY AUTOPRIME -->
+
+<section class="why">
+
+    <div class="section-heading light">
+
+        <p class="small-title">WHY AUTOPRIME</p>
+
+        <h2>A Better Vehicle Marketplace</h2>
+
+        <p>
+            We make finding and listing vehicles easier,
+            simpler, and more organized.
+        </p>
+
+    </div>
+
+
+    <div class="features">
+
+        <div>
+            <span class="feature-number">01</span>
+            <h3>Wide Selection</h3>
+            <p>
+                Browse sedans, SUVs, and pickup trucks
+                from different listings.
+            </p>
+        </div>
+
+        <div>
+            <span class="feature-number">02</span>
+            <h3>Detailed Listings</h3>
+            <p>
+                View vehicle specifications, mileage,
+                price, condition, and seller information.
+            </p>
+        </div>
+
+        <div>
+            <span class="feature-number">03</span>
+            <h3>Easy Selling</h3>
+            <p>
+                Sellers can create their own vehicle
+                listing using our simple form.
+            </p>
+        </div>
+
+        <div>
+            <span class="feature-number">04</span>
+            <h3>Easy Navigation</h3>
+            <p>
+                Find vehicles quickly using separate
+                category pages.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="ap-cta">
+    <div>
+        <p class="small-title">READY WHEN YOU ARE</p>
+        <h2>Find, compare, and ask the seller — all in one place.</h2>
+        <p>Save the cars you like, compare up to three side by side, and message sellers before you reserve or buy.</p>
+    </div>
+    <div class="ap-cta-actions">
+        <a href="browse.html" class="primary-button">Start Browsing</a>
+        <a href="compare.html" class="secondary-button">Compare Vehicles</a>
+        <button type="button" class="secondary-button" data-open-support>💬 Chat with Support</button>
+    </div>
+</section>
+
+<section id="about" class="about">
+
+    <div>
+
+        <p class="small-title">ABOUT AUTOPRIME</p>
+
+        <h2>
+            Your Online Vehicle Marketplace
+        </h2>
+
+    </div>
+
+    <div>
+
+        <p>
+            AUTOPRIME is a vehicle buy-and-sell website
+            concept designed to make vehicle shopping
+            easier for buyers and sellers.
+        </p>
+
+        <p>
+            The platform focuses on three major vehicle
+            categories: sedans, SUVs, and pickup trucks.
+            Each category has its own dedicated page
+            containing detailed vehicle listings.
+        </p>
+
+    </div>
+
+</section>
+
+<section id="contact" class="contact">
+
+    <div class="section-heading">
+
+        <p class="small-title">GET IN TOUCH</p>
+
+        <h2>Contact AUTOPRIME</h2>
+
+        <p>
+            Have questions about a vehicle or want
+            to sell your vehicle?
+        </p>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+        <div>
+            <h3>Customer Support</h3>
+            <p>support@autoprime.com</p>
+        </div>
+
+        <div>
+            <h3>Phone</h3>
+            <p>0912 345 6789</p>
+        </div>
+
+        <div>
+            <h3>Location</h3>
+            <p>Angeles City, Pampanga</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer class="site-footer">
+    <div class="footer-grid">
+        <div><div class="logo">AUTO<span>PRIME</span></div><p>An academic prototype of an online vehicle marketplace. All listings, sellers, and transactions are sample data.</p></div>
+        <div><h4>Browse</h4><a href="browse.html">All Vehicles</a><a href="compare.html">Compare Vehicles</a><a href="favorites.html">Favorites</a><a href="sell.html">Sell a Vehicle</a></div>
+        <div><h4>Support</h4><a href="help.html">Help Center</a><a href="help.html#faq">FAQ</a><a href="help.html#ticket">Submit a Ticket</a><a href="#" data-open-support>Live Chat</a></div>
+        <div><h4>Account</h4><a href="account.html">My Account</a><a href="account.html#saved">Saved Searches</a><a href="account.html#verification">ID Verification</a><a href="transactions.html">Transactions</a></div>
+    </div>
+    <p class="footer-copy">© 2026 AUTOPRIME. All Rights Reserved. · Simulated features are clearly labeled.</p>
+</footer>
+
+<script src="app.js"></script>
+<script src="catalog-data.js"></script>
+<script src="enhance.js"></script>
+</body>
+</html>
